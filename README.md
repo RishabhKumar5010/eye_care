@@ -50,3 +50,14 @@ If the program crashes due to unhandled errors, you would know this by checking 
 is running in the background. On my ubuntu system I can use `ps ax | grep python` to check
 if the program (eye.py) is active in background or not.
 One can also use `top` for this purpose.
+
+
+## Stopping the Script
+
+If you just want the script to be not disturbing you for sometime, you could active DND (Do Not Disturb)
+service on your system, if available.
+
+You could also run something like `pkill -f eye.py` to kill the process for the current session.
+
+To permanently stop the script, remove the script from Startup apps list and then kill the 
+process (eye.py) or log out and re-login or simply reboot your system.
