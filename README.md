@@ -38,3 +38,15 @@ To get ogg123 on ubuntu\
 ## Adding in Startup Applications:
 
 I am using KDE desktop on ubuntu and there is a GUI app called Autostart which can be used to add a script as a startup application, so that the script doesn't need to be manually run after each system boot. You can search for steps to add a script to startup apps respective to your platform.
+
+
+## Debugging
+
+Errors in the program related to the actual working of the notification module are recorded
+into the journaling program on your system. On my ubuntu system the error generated are reflected
+into `journalctl`. You can use this CLI utility or a GUI app like KSystemLog to view errors.
+
+If the program crashes due to unhandled errors, you would know this by checking if the program
+is running in the background. On my ubuntu system I can use `ps ax | grep python` to check
+if the program (eye.py) is active in background or not.
+One can also use `top` for this purpose.
