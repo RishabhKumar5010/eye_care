@@ -37,3 +37,5 @@ To get ogg123 on ubuntu\
 `sudo apt install vorbis-tools`
 
 ## Adding in Startup Applications:
+
+I am using KDE desktop on ubuntu and there is an GUI app called Autostart which can be used to add a script as a startup application, so that the script doesn't need to be manually run after each system boot. You can search for steps to add a script to startup apps respective to your platform.
