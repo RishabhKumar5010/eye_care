@@ -17,12 +17,12 @@ look_away_secs = 25 # hold the popup on the screen for x secs while you look awa
 ########################
 
 def func():
-    notification.notify(title= "20-20-20 Rule",
+    try:
+        notification.notify(title= "20-20-20 Rule",
                     message= "Give break to eyes. Look away for 20 sec",
                     timeout= look_away_secs,
                     toast=False,
                     app_name = 'Eye Care')
-    try:
         os.system(system_audio_player+' '+audio_player_flags+' '+audio_file1)
         time.sleep(look_away_secs - 1)
         os.system(system_audio_player+' '+audio_player_flags+' '+audio_file2)
