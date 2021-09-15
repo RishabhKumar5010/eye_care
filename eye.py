@@ -7,8 +7,8 @@ from systemd import journal
 
 system_audio_player = 'ogg123' #sudo apt install vorbis-tools for ogg123
 audio_player_flags = ''
-audio_file1 = "eye_care_audio/complete.oga"
-audio_file2 = "eye_care_audio/message.oga"
+audio_file1 = "~/scripts/eye_care/eye_care_audio/complete.oga"
+audio_file2 = "~/scripts/eye_care/eye_care_audio/message.oga"
 
 def func():
     notification.notify(title= "20-20-20 Rule",
